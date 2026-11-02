@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "lua-unveil"
+version = "1.0.0"
+description = "Static Lua/Luau deobfuscation and stack-VM analysis toolkit"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [{name = "Lua Unveil contributors"}]
+dependencies = []
+
+[project.scripts]
+lua-unveil = "lua_unveil.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["lua_unveil*"]

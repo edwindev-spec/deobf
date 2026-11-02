@@ -1,0 +1,27 @@
+{
+  "name": "stack-v1",
+  "opcodes": {
+    "0x01": {"mnemonic": "PUSH_CONST", "operands": ["u16"]},
+    "0x02": {"mnemonic": "PUSH_INT", "operands": ["i32"]},
+    "0x03": {"mnemonic": "LOAD_LOCAL", "operands": ["u8"]},
+    "0x04": {"mnemonic": "STORE_LOCAL", "operands": ["u8"]},
+    "0x10": {"mnemonic": "ADD", "operands": []},
+    "0x11": {"mnemonic": "SUB", "operands": []},
+    "0x12": {"mnemonic": "MUL", "operands": []},
+    "0x13": {"mnemonic": "DIV", "operands": []},
+    "0x14": {"mnemonic": "MOD", "operands": []},
+    "0x15": {"mnemonic": "POW", "operands": []},
+    "0x16": {"mnemonic": "CONCAT", "operands": []},
+    "0x17": {"mnemonic": "EQ", "operands": []},
+    "0x18": {"mnemonic": "LT", "operands": []},
+    "0x19": {"mnemonic": "LE", "operands": []},
+    "0x1a": {"mnemonic": "NOT", "operands": []},
+    "0x1b": {"mnemonic": "NEG", "operands": []},
+    "0x20": {"mnemonic": "DUP", "operands": []},
+    "0x21": {"mnemonic": "POP", "operands": []},
+    "0x30": {"mnemonic": "JMP", "operands": ["i16"]},
+    "0x31": {"mnemonic": "JUMP_IF_FALSE", "operands": ["i16"]},
+    "0x40": {"mnemonic": "RETURN", "operands": []},
+    "0x41": {"mnemonic": "RETURN_VOID", "operands": []}
+  }
+}
